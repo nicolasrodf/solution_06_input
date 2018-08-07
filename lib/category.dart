@@ -50,6 +50,7 @@ class Category extends StatelessWidget {
     Navigator.of(context).push(MaterialPageRoute<Null>(
       builder: (BuildContext context) {
         return Scaffold(
+          //El appbar tiene el nombre del cateogory
           appBar: AppBar(
             elevation: 1.0,
             title: Text(
@@ -59,6 +60,7 @@ class Category extends StatelessWidget {
             centerTitle: true,
             backgroundColor: color,
           ),
+          //el body tiene un converter screen con su name,color y units
           body: ConverterRoute(
             color: color,
             name: name,
